@@ -11,10 +11,12 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    shape.cpp \
     tp2.cpp
 
 HEADERS += \
     mainwindow.h \
+    shape.h \
     tp2.h
 
 FORMS += \

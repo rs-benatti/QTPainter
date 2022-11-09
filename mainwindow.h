@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTextEdit>
+#include "tp2.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,12 +17,17 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QTextEdit * text;
+    TP2 * centerBox;
     void closeEvent(QCloseEvent * e) override;
 
 public slots:
     void quitApp();
     void openFile();
     void saveFile();
+    void changeColor();
+    void changeLineWidth();
+    void changeLineStyle(int styleOption);
+    void setShape(int shapeOption);
 private:
     Ui::MainWindow *ui;
 };
